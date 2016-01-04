@@ -1,0 +1,2 @@
+Assumptions:
+1. Only one car can enter at any one time.
