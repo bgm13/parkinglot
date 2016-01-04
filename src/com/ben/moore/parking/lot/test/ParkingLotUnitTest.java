@@ -52,5 +52,6 @@ public class ParkingLotUnitTest {
 		assertEquals(pl.getCapacity(), 1);
 		assertEquals(pl.getStatus(), "Open");		
 	}
+	
 
 }

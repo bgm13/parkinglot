@@ -1,2 +1,4 @@
 Assumptions:
 1. Only one car can enter at any one time.
+2. There is a constant queue of cars waiting to enter the parking lot.
+3. The parking lot capacity is known.

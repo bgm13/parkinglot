@@ -1,2 +1,18 @@
+Design:
+
+I decided to go with quite a simplistic multithreaded counter design. The ParkingLot class itself holds the majority of the implementation
+code whilst the Barrier class acts as the Threads in this scenario. So upon instantiation of the ParkingLot, the Barriers can be
+powered on/generated. 
+
+So the constructor for ParkingLot takes four parameters: name, numberOfEntries, numberOfExits, parkingLotCapacity
+
+Once the ParkingLot is instantiated, you can see in the simulation class that I have used object oriented design as a brief example
+with the Car objects in order to determine the parking lots capacity. I felt it was overkill to start using thread safe collections
+to hold the objects(Cars) when the specification of the assignment really wanted a program that can count.
+
+This is when I decided to use the high performing thread safe AtomicInteger to maintain the capacity of the of the parking lot, working with
+synchronized methods that interact with it.
+
 Instructions:
-1. 
+1. Simply run the ParkingLotSimulation class to see the program run via the console log.
+2. Unit tests can also be run and are called ParkingLotUnitTest.
